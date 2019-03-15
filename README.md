@@ -9,7 +9,6 @@ PHP ==必須== 使用長標籤 <font color="#c7254e">`<?php ?>`</font> 或 <font
 - 純PHP文件 ==必須==省 略最後的 <font color="#c7254e">`?>`</font> 標籤。【PSR-2】
 
 ## 文件命名
-- 小寫駝峰式命名法（camelCase），小寫字母開頭，後面每個單字的第一個字母大寫。
 - 檔名長度必須小於 <font color="#c7254e">`32`</font> 個字元。
 - 使用 <font color="#c7254e">`.php`</font> 作為副檔名。
 - 會被引入的設定檔以 <font color="#c7254e">`.inc.php`</font> 作為結尾。
@@ -18,10 +17,9 @@ PHP ==必須== 使用長標籤 <font color="#c7254e">`<?php ?>`</font> 或 <font
 PHP ==必須== 使用<font color="#c7254e">`無BOM`</font>的<font color="#c7254e">`UTF-8`</font>編碼。【PSR-1】
 
 ## 字串
-字串 ==必須== 使用單引號，3 個例外
+字串 ==必須== 使用單引號，2 個例外
 - \n
 - 字串內容包含單引號
-- ~~SQL字串~~
 
 ## 縮排
 程式碼 ==必須== 使用<font color="#c7254e">`4個space`</font>不使用<font color="#c7254e">`tab`</font>縮進。【PSR-2】
@@ -144,7 +142,7 @@ class ClassName extends ParentClass implements \ArrayAccess, \Countable
     // class body
 }
 ```
-- 大寫駝峰式命名法（Pascal Case），大寫字母開頭，後面每個單字的第一個字母大寫。
+- 大寫駝峰式命名法（Pascal Case），大寫字母開頭，後面每個單字的第一個字母大寫。【PSR-1】
 - 一個 <font color="#c7254e">`class`</font> 一個檔案。【PSR-2】
 - 括號 <font color="#c7254e">`{`</font> ==必須== 換行。【PSR-2】
 - <font color="#c7254e">`extends`</font> 與 <font color="#c7254e">`implements`</font> ==必須== 與 <font color="#c7254e">`class同一行`</font>。【PSR-2】
@@ -212,7 +210,7 @@ class ClassName
     }
 }
 ```
-- 小寫駝峰式命名法（camelCase），小寫字母開頭，後面每個單字的第一個字母大寫。
+- 小寫駝峰式命名法（camelCase），小寫字母開頭，後面每個單字的第一個字母大寫。【PSR-1】
 - 括號 <font color="#c7254e">`{`</font> ==必須== 換行。【PSR-2】
 - 每個方法都 ==必須== 加上訪問修飾詞 ( <font color="#c7254e">`public`</font>、<font color="#c7254e">`protected`</font>、<font color="#c7254e">`private`</font> )。【PSR-2】
 - 方法名稱與 <font color="#c7254e">`(`</font> 之間 ==不可== 留空白。【PSR-2】
